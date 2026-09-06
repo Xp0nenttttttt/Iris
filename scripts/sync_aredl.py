@@ -11,8 +11,8 @@ import requests
 # CONFIG
 # ==========================================
 
-SUPABASE_URL = os.environ["SUPABASE_URL"]
-SUPABASE_KEY = os.environ["SUPABASE_KEY"]
+SUPABASE_URL = os.environ["https://bpgotjdnrbrbwfckaayz.supabase.co"]
+SUPABASE_KEY = os.environ["sb_publishable_3ZWN1ubxuoyfhTE3Lhl8ZA_-Twrmjs8"]
 
 JSON_FILE = "aredl-clan.json"
 
