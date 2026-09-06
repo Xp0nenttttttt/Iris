@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CLAN NAME — Geometry Dash</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="assets/logo.png" alt="Clan Logo">
+            <span>CLAN NAME</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="members.html">Membres</a>
+            <a href="rankings.html">Classement</a>
+            <a href="events.html">Événements</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="subtitle">
+                    GEOMETRY DASH CLAN
+                </p>
+
+                <h1>
+                    CLAN NAME
+                </h1>
+
+                <p>
+                    Une équipe de joueurs Geometry Dash.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="members.html" class="button">
+                        Voir les membres
+                    </a>
+
+                    <a href="rankings.html" class="button secondary">
+                        Classement
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATISTIQUES -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <span id="member-count">--</span>
+                <p>Membres</p>
+            </div>
+
+            <div class="stat-card">
+                <span id="total-points">--</span>
+                <p>Points</p>
+            </div>
+
+            <div class="stat-card">
+                <span id="hardest-level">--</span>
+                <p>Hardest</p>
+            </div>
+
+        </section>
+
+
+        <!-- TOP MEMBERS -->
+        <section class="section">
+
+            <h2>Top Members</h2>
+
+            <div id="top-members" class="members-grid">
+                <!-- Généré par JavaScript -->
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 CLAN NAME</p>
+    </footer>
+
+
+    <!-- SUPABASE -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Notre code -->
+    <script src="js/supabase.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
