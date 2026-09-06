@@ -32,3 +32,5 @@ jobs:
           git add aredl-ranks.json aredl-user.json aredl-clan.json
           git diff --staged --quiet || git commit -m "Update AREDL data"
           git push
+      - name: Sync AREDL with Supabase
+        run: python scripts/sync_aredl.py
