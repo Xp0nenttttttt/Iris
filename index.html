@@ -1,62 +1,164 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CLAN NAME — Geometry Dash</title>
+    <title>Spleen — Gaming Stats</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- Background -->
+    <div class="background">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="grid"></div>
+    </div>
+
+
+    <!-- NAVIGATION -->
+
     <header class="navbar">
 
         <div class="logo">
-            <img src="assets/logo.png" alt="Clan Logo">
-            <span>CLAN NAME</span>
+            SPLEEN<span>.</span>
         </div>
 
         <nav>
-            <a href="index.html">Accueil</a>
-            <a href="members.html">Membres</a>
-            <a href="rankings.html">Classement</a>
-            <a href="events.html">Événements</a>
+            <a href="#home" class="active">Accueil</a>
+            <a href="#geometry-dash">Geometry Dash</a>
+            <a href="#osu">osu!</a>
         </nav>
+
+        <button id="themeButton" class="theme-button">
+            ◐
+        </button>
 
     </header>
 
 
-    <!-- HERO -->
     <main>
 
-        <section class="hero">
+        <!-- HERO -->
+
+        <section id="home" class="hero">
 
             <div class="hero-content">
 
-                <p class="subtitle">
-                    GEOMETRY DASH CLAN
-                </p>
+                <div class="avatar-wrapper">
+                    <img
+                        src="assets/avatar.png"
+                        alt="Avatar de Spleen"
+                        class="avatar"
+                    >
 
-                <h1>
-                    CLAN NAME
-                </h1>
+                    <div class="online-dot"></div>
+                </div>
 
-                <p>
-                    Une équipe de joueurs Geometry Dash.
-                </p>
 
-                <div class="hero-buttons">
-                    <a href="members.html" class="button">
-                        Voir les membres
-                    </a>
+                <div class="hero-text">
 
-                    <a href="rankings.html" class="button secondary">
-                        Classement
-                    </a>
+                    <div class="country">
+                        🇫🇷 FRANCE
+                    </div>
+
+                    <h1>
+                        SPLEEN
+                    </h1>
+
+                    <p>
+                        Geometry Dash & osu! player
+                    </p>
+
+                    <div class="hero-tags">
+                        <span>Geometry Dash</span>
+                        <span>osu!</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK STATS -->
+
+            <div class="quick-stats">
+
+                <div class="quick-stat">
+
+                    <span class="quick-label">
+                        AREDL
+                    </span>
+
+                    <strong>
+                        #000
+                    </strong>
+
+                    <small>
+                        Global Rank
+                    </small>
+
+                </div>
+
+
+                <div class="quick-stat">
+
+                    <span class="quick-label">
+                        OSU!
+                    </span>
+
+                    <strong>
+                        #0000
+                    </strong>
+
+                    <small>
+                        Global Rank
+                    </small>
+
+                </div>
+
+
+                <div class="quick-stat">
+
+                    <span class="quick-label">
+                        PP
+                    </span>
+
+                    <strong>
+                        0,000
+                    </strong>
+
+                    <small>
+                        osu!
+                    </small>
+
+                </div>
+
+
+                <div class="quick-stat">
+
+                    <span class="quick-label">
+                        EXTREMES
+                    </span>
+
+                    <strong>
+                        00
+                    </strong>
+
+                    <small>
+                        Completed
+                    </small>
+
                 </div>
 
             </div>
@@ -64,53 +166,537 @@
         </section>
 
 
-        <!-- STATISTIQUES -->
-        <section class="stats">
+        <!-- GEOMETRY DASH -->
 
-            <div class="stat-card">
-                <span id="member-count">--</span>
-                <p>Membres</p>
+        <section id="geometry-dash" class="game-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">01</span>
+
+                    <h2>
+                        Geometry Dash
+                    </h2>
+
+                    <p>
+                        My progress and achievements
+                    </p>
+                </div>
+
+                <div class="game-badge gd-badge">
+                    GD
+                </div>
+
             </div>
 
-            <div class="stat-card">
-                <span id="total-points">--</span>
-                <p>Points</p>
-            </div>
 
-            <div class="stat-card">
-                <span id="hardest-level">--</span>
-                <p>Hardest</p>
+            <div class="stats-grid">
+
+
+                <!-- HARDEST -->
+
+                <article class="stat-card hardest-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            HARDEST
+                        </span>
+
+                        <span class="card-icon">
+                            ◆
+                        </span>
+
+                    </div>
+
+                    <div class="hardest-content">
+
+                        <div class="hardest-image">
+                            <div class="image-placeholder">
+                                LEVEL
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Your Hardest
+                            </h3>
+
+                            <p>
+                                Extreme Demon
+                            </p>
+
+                            <span class="rank">
+                                AREDL #000
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- AREDL -->
+
+                <article class="stat-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            AREDL RANK
+                        </span>
+
+                        <span class="card-icon">
+                            #
+                        </span>
+
+                    </div>
+
+                    <div class="big-number">
+                        #000
+                    </div>
+
+                    <p class="stat-description">
+                        Global position
+                    </p>
+
+                </article>
+
+
+                <!-- COUNTRY -->
+
+                <article class="stat-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            COUNTRY
+                        </span>
+
+                        <span class="card-icon">
+                            🇫🇷
+                        </span>
+
+                    </div>
+
+                    <div class="big-number">
+                        #00
+                    </div>
+
+                    <p class="stat-description">
+                        France
+                    </p>
+
+                </article>
+
+
+                <!-- EXTREMES -->
+
+                <article class="stat-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            EXTREME DEMONS
+                        </span>
+
+                        <span class="card-icon">
+                            ★
+                        </span>
+
+                    </div>
+
+                    <div class="big-number">
+                        00
+                    </div>
+
+                    <p class="stat-description">
+                        Levels completed
+                    </p>
+
+                </article>
+
+
+                <!-- HOURS -->
+
+                <article class="stat-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            PLAYTIME
+                        </span>
+
+                        <span class="card-icon">
+                            ◷
+                        </span>
+
+                    </div>
+
+                    <div class="big-number">
+                        000h
+                    </div>
+
+                    <p class="stat-description">
+                        Total playtime
+                    </p>
+
+                </article>
+
+
+                <!-- PROGRESS -->
+
+                <article class="stat-card progress-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            PROGRESSION
+                        </span>
+
+                        <span class="card-icon">
+                            ↗
+                        </span>
+
+                    </div>
+
+                    <div class="progress-container">
+
+                        <div class="progress-header">
+
+                            <span>
+                                Overall
+                            </span>
+
+                            <strong>
+                                00%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                style="width: 0%;"
+                            ></div>
+                        </div>
+
+                    </div>
+
+                    <p class="stat-description">
+                        Personal progression
+                    </p>
+
+                </article>
+
             </div>
 
         </section>
 
 
-        <!-- TOP MEMBERS -->
-        <section class="section">
+        <!-- OSU -->
 
-            <h2>Top Members</h2>
+        <section id="osu" class="game-section osu-section">
 
-            <div id="top-members" class="members-grid">
-                <!-- Généré par JavaScript -->
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">02</span>
+
+                    <h2>
+                        osu!
+                    </h2>
+
+                    <p>
+                        Performance and ranking
+                    </p>
+                </div>
+
+                <div class="game-badge osu-badge">
+                    osu!
+                </div>
+
             </div>
 
+
+            <div class="stats-grid osu-grid">
+
+
+                <!-- GLOBAL -->
+
+                <article class="stat-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            GLOBAL RANK
+                        </span>
+
+                        <span class="card-icon">
+                            🌍
+                        </span>
+
+                    </div>
+
+                    <div class="big-number">
+                        #0000
+                    </div>
+
+                    <p class="stat-description">
+                        Worldwide
+                    </p>
+
+                </article>
+
+
+                <!-- COUNTRY -->
+
+                <article class="stat-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            COUNTRY RANK
+                        </span>
+
+                        <span class="card-icon">
+                            🇫🇷
+                        </span>
+
+                    </div>
+
+                    <div class="big-number">
+                        #000
+                    </div>
+
+                    <p class="stat-description">
+                        France
+                    </p>
+
+                </article>
+
+
+                <!-- PP -->
+
+                <article class="stat-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            PERFORMANCE
+                        </span>
+
+                        <span class="card-icon">
+                            ★
+                        </span>
+
+                    </div>
+
+                    <div class="big-number">
+                        0,000
+                    </div>
+
+                    <p class="stat-description">
+                        Performance points
+                    </p>
+
+                </article>
+
+
+                <!-- ACCURACY -->
+
+                <article class="stat-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            ACCURACY
+                        </span>
+
+                        <span class="card-icon">
+                            %
+                        </span>
+
+                    </div>
+
+                    <div class="big-number">
+                        00.00%
+                    </div>
+
+                    <p class="stat-description">
+                        Overall accuracy
+                    </p>
+
+                </article>
+
+
+                <!-- PLAYS -->
+
+                <article class="stat-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            PLAYS
+                        </span>
+
+                        <span class="card-icon">
+                            ▶
+                        </span>
+
+                    </div>
+
+                    <div class="big-number">
+                        00000
+                    </div>
+
+                    <p class="stat-description">
+                        Total plays
+                    </p>
+
+                </article>
+
+
+                <!-- PLAYTIME -->
+
+                <article class="stat-card">
+
+                    <div class="card-top">
+
+                        <span>
+                            PLAYTIME
+                        </span>
+
+                        <span class="card-icon">
+                            ◷
+                        </span>
+
+                    </div>
+
+                    <div class="big-number">
+                        000h
+                    </div>
+
+                    <p class="stat-description">
+                        Total playtime
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <!-- OSU PERFORMANCE -->
+
+            <div class="osu-bottom-grid">
+
+                <article class="wide-card">
+
+                    <div class="card-top">
+
+                        <div>
+                            <span>
+                                PERFORMANCE
+                            </span>
+
+                            <h3>
+                                osu! Progress
+                            </h3>
+                        </div>
+
+                        <span class="trend">
+                            +0.00%
+                        </span>
+
+                    </div>
+
+                    <div class="fake-chart">
+
+                        <div class="chart-line"></div>
+
+                        <div class="chart-point point-one"></div>
+                        <div class="chart-point point-two"></div>
+                        <div class="chart-point point-three"></div>
+                        <div class="chart-point point-four"></div>
+                        <div class="chart-point point-five"></div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="wide-card recent-card">
+
+                    <div class="card-top">
+
+                        <div>
+                            <span>
+                                RECENT
+                            </span>
+
+                            <h3>
+                                Latest score
+                            </h3>
+                        </div>
+
+                        <span>
+                            →
+                        </span>
+
+                    </div>
+
+                    <div class="recent-score">
+
+                        <div class="score-rank">
+                            S
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Your latest play
+                            </strong>
+
+                            <p>
+                                Beatmap Name
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+            <div class="chart-container">
+            <h2>Évolution AREDL</h2>
+            <canvas id="aredlChart"></canvas>
+            </div>
         </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                SPLEEN<span>.</span> — Personal gaming statistics
+            </p>
+
+            <p class="updated">
+                Last update: <span id="lastUpdate">—</span>
+            </p>
+
+        </footer>
 
     </main>
 
-
-    <footer>
-        <p>© 2026 CLAN NAME</p>
-    </footer>
-
-
-    <!-- SUPABASE -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-    <!-- Notre code -->
-    <script src="js/supabase.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
-
 </html>
