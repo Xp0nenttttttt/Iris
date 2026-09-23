@@ -155,7 +155,14 @@ cards.forEach(card => {
 async function loadExcel() {
 
     // Charger le fichier Excel
-    const response = await fetch("stats_clan_test.xlsx");
+    const response = await fetch("js/stats_clan_test.xlsx");
+
+    if (!response.ok) {
+        throw new Error(
+            `Impossible de charger les statistiques (${response.status})`
+        );
+    }
+
     const buffer = await response.arrayBuffer();
 
     // Lire le fichier
@@ -236,4 +243,17 @@ async function loadExcel() {
     });
 }
 
-loadExcel();
+loadExcel().catch(error => {
+    console.error("Erreur lors du chargement du graphique :", error);
+
+    const chartContainer =
+        document.querySelector(".chart-container");
+
+    if (chartContainer) {
+        const errorMessage = document.createElement("p");
+        errorMessage.className = "chart-error";
+        errorMessage.textContent =
+            "Le graphique n'a pas pu être chargé.";
+        chartContainer.appendChild(errorMessage);
+    }
+});
